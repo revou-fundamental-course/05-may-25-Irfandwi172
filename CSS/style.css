@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  font-family: "Cascadia Mono", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: #f5f7fa;
+  color: #333;
+}
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  background-color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .logo i {
+  color: #333;
+}
+header .logo img {
+  width: 40px;
+  height: 40px;
+}
+header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+header nav a:hover {
+  color: #501fcb;
+  transition: 1s ease-in-out;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://unair.ac.id/wp-content/uploads/2019/09/Ilustrasi-oleh-Ilmu-Dasar.png")
+      no-repeat center center;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+}
+
+.hero h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 16px;
+  color: #d0d0d0;
+}
+#content {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 70px;
+  background-color: #ffffff;
+}
+.image-box {
+  position: relative;
+  left: 250px;
+  width: 350px;
+  height: 250px;
+  background-color: #ccc;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+.image-box.fade-out {
+  opacity: 0;
+}
+
+.contact-box {
+  position: relative;
+  right: 230px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+}
+.contact-box input,
+.contact-box select,
+.contact-box button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px;
+}
+.error {
+  border: 2px solid red;
+}
+
+#content .contact-box button:hover {
+  cursor: pointer;
+}
+.features {
+  position: relative;
+  top: 260px;
+  right: 195px;
+  font-size: 14px;
+  color: #666;
+  
+}
+.package-section {
+  background-color: #eef1f5;
+  padding: 20px;
+  text-align: center;
+}
+.package-section h2 {
+  margin-bottom: 30px;
+}
+.packages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.package {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.package img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+#call-us {
+  text-align: center;
+  padding: 40px 20px;
+}
+#call-us h3 {
+  margin-bottom: 20px;
+}
+#call-us button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+#call-us button:hover {
+  cursor: pointer;
+}
+footer {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  color: #aaa;
+  border-top: 1px solid #ddd;
+}

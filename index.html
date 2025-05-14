@@ -1,11 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Irfan Travel</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Irfan_V Travel Agent Website</title>
+    <link rel="stylesheet" href="CSS\style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="img\—Pngtree—vacation and travel icon_4032146.png"
+          alt="Logo"
+        /><strong><i>Irfan_V</i></strong>
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#our-package">Our Package</a>
+        <a href="#call-us">Call Us</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <h1>Irfan_V Travel Agent's</h1>
+        <p>Your happiness is our happiness</p>
+      </section>
+
+      <section id="content">
+        <div class="image-box" id="slideshow-box"></div>
+        <div class="features">
+          <ul>
+            <li>Travel murah, dan berkualitas untuk keluarga anda</li>
+            <li>Jadwal fleksibel, sesuai kebutuhan</li>
+            <li>Tour lokal dan mancanegara</li>
+            <li>Berpengalaman dan terpercaya</li>
+          </ul>
+        </div>
+        <div class="contact-box">
+          <h3>Contact Us</h3>
+          <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
+
+          <input type="text" id="name" placeholder="Your Name" />
+          <input type="email" id="email" placeholder="Email Address" />
+
+          <select id="interest">
+            <option value="">What are you interested in?</option>
+            <option value="tour">Tour Packages</option>
+            <option value="custom">Custom Trip</option>
+          </select>
+
+          <button onclick="return validateForm()"><strong>SEND</strong></button>
+        </div>
+      </section>
+    </main>
+
+    <main id="our-package">
+      <section class="package-section">
+        <h2>Our Package</h2>
+        <div class="packages">
+          <div class="package">
+            <img src="img\bali.jpg" alt="Bali" /><br /><strong>Bali</strong
+            ><br />Liburan dan wisata di Bali
+          </div>
+          <div class="package">
+            <img src="img\jepang.jpg" alt="Jepang" /><strong>Japan</strong
+            ><br />Liburan budaya dan belanja
+          </div>
+          <div class="package">
+            <img src="img\singapura.jpg" alt="Singapura" /><strong
+              >Singapore</strong
+            ><br />Liburan kota metropolitan
+          </div>
+          <div class="package">
+            <img src="img\bandung.jpg" alt="" /><strong>Bandung</strong
+            ><br />Alam dan kuliner lokal
+          </div>
+          <div class="package">
+            <img src="img\surabaya.jpg" alt="" /><strong>Surabaya</strong
+            ><br />Kota pahlawan yang penuh sejarah
+          </div>
+          <div class="package">
+            <img src="img\jakarta.jpg" alt="" /><strong>Jakarta</strong
+            ><br />Shopping Mall dan Pemandangan Kota Malam
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section id="call-us">
+      <h3>Ready for the Trip of a Lifetime?</h3>
+      <p>
+        Join thousands of happy travelers who trusted us to create unforgettable
+        memories around the world.
+      </p>
+      <button><strong>CALL TO ACTION</strong></button>
+    </section>
+
+    <footer>
+      <p>IRFAN</p>
+      <p>Terms of Services | Privacy Policy</p>
+      <p>&copy; 2025 IRFAN</p>
+    </footer>
+    <script src="JS\script.js"></script>
+  </body>
 </html>
